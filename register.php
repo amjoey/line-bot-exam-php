@@ -9,9 +9,7 @@ $queryStrings = [
     'client_id' => CLIENT_ID,
     'redirect_uri' => CALLBACK_URI,
     'scope' => 'notify',
-    'state' => 'abcdef123456',
-    'shopid' => '01',
-    'machineid' => 'm002'
+    'state' => '0001002'
 ];
 
 $queryString = LINE_API_URI . http_build_query($queryStrings);
