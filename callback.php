@@ -33,11 +33,15 @@ try {
     $json = json_decode($res);
 
    // var_dump($json);
+    /*
     if(!is_null($json) && array_key_exists('status',$json)){
           if($json['status']==200){
              echo "access token is: ".$json['access_token']." code is: ".$_GET['state'];
           }
     }
+    */
+    echo $_GET['state'];
+    
 } catch(Exception $e) {
     var_dump($e);
 }
