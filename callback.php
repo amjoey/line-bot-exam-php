@@ -29,8 +29,10 @@ try {
 
     if ($res == false)
         throw new Exception(curl_error($ch), curl_errno($ch));
+    
+    var_dump($json);
 
-    $json = json_decode($res);
+    $json = json_decode($res,TRUE);
 
    // var_dump($json);
     /*
