@@ -22,7 +22,7 @@ try {
     curl_close($ch);
     if ($res == false)
         throw new Exception(curl_error($ch), curl_errno($ch));
-    $json = json_decode($res);
+    $json = json_decode($res,TRUE);
   //  $status = $json->status;
   //  var_dump($status);
   // ตรวจสอบข้อมูล ใช้เป็นเงื่อนไขในการทำงาน
