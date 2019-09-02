@@ -30,7 +30,7 @@ try {
     if ($res == false)
         throw new Exception(curl_error($ch), curl_errno($ch));
     
-    var_dump($json);
+   
 
     $json = json_decode($res,TRUE);
 
@@ -42,8 +42,8 @@ try {
           }
     }
     */
-    //echo "access token is: ".$json['access_token']." code is: ".$_GET['state'];
-    echo $json['access_token'];
+    echo "access token is: ".$json['access_token']." code is: ".$_GET['state'];
+    //echo $json['access_token'];
     
 } catch(Exception $e) {
     var_dump($e);
