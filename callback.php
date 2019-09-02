@@ -40,7 +40,7 @@ try {
           }
     }
     */
-    echo $_GET['state'];
+    echo "access token is: ".$json['access_token']." code is: ".$_GET['state'];
     
 } catch(Exception $e) {
     var_dump($e);
