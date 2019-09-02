@@ -8,7 +8,7 @@ $headers = [
     'Authorization: Bearer ' . $_GET['token']
 ];
 $fields = [
-    'message' => 'เครื่องซักหมายเลข 1 ซักเสร็จแล้วค่ะ'
+    'message' => 'ร้านสาขา'. $_GET['s'].'เครื่องหมายเลข'. $_GET['m']. 'ทำงานเสร็จแล้วค่ะ'
 ];
 
 try {
