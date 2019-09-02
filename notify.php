@@ -1,13 +1,14 @@
 <?php
 
-define('ACCESS_TOKEN', '0835v8bNaH6nlDvguzOtivAGAga1MzsJa1mzphasIxw');
+//define('ACCESS_TOKEN', '0835v8bNaH6nlDvguzOtivAGAga1MzsJa1mzphasIxw');
 define('LINE_API_URI', 'https://notify-api.line.me/api/notify');
 
 $headers = [
-    'Authorization: Bearer ' . ACCESS_TOKEN
+    //'Authorization: Bearer ' . ACCESS_TOKEN
+    'Authorization: Bearer ' . $_GET['token']
 ];
 $fields = [
-    'message' => 'Your order #12345 has been delivered'
+    'message' => 'เครื่องซักหมายเลข 1 ซักเสร็จแล้วค่ะ'
 ];
 
 try {
